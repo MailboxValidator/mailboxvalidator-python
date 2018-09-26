@@ -18,3 +18,27 @@ class SingleValidation:
             return json.loads(res.read())
         except:
             return None
+
+    def DisposableEmail(self, email):
+        p = { 'key': self.apikey, 'format': 'json', 'email': email }
+
+        try:
+            conn = http.client.HTTPConnection("api.mailboxvalidator.com")
+            conn.request("GET", "/v1/email/disposable?" + urllib.parse.urlencode(p))
+            res = conn.getresponse()
+            # print res.read()
+            return json.loads(res.read())
+        except:
+            return None
+
+    def FreeEmail(self, email):
+        p = { 'key': self.apikey, 'format': 'json', 'email': email }
+
+        try:
+            conn = http.client.HTTPConnection("api.mailboxvalidator.com")
+            conn.request("GET", "/v1/email/free?" + urllib.parse.urlencode(p))
+            res = conn.getresponse()
+            # print res.read()
+            return json.loads(res.read())
+        except:
+            return None
