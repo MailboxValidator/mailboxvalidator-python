@@ -13,6 +13,7 @@ setuptools.setup(
 	long_description_content_type="text/markdown",
 	url="https://github.com/MailboxValidator/mailboxvalidator-python",
 	packages=setuptools.find_packages(),
+	tests_require=['pytest>=3.0.6'],
 	classifiers=(
 		"Development Status :: 5 - Production/Stable",
 		"Intended Audience :: Developers",
