@@ -30,11 +30,11 @@ Go to https://www.mailboxvalidator.com/plans#api to sign up for FREE API plan an
 Functions
 =========
 
-## SingleValidation(api_key)
+## EmailValidation(api_key)
 
 Creates a new instance of the MailboxValidator object with the API key.
 
-## ValidateEmail(email_address)
+## validate_email(email_address)
 
 Performs email validation on the supplied email address.
 
@@ -63,7 +63,7 @@ Performs email validation on the supplied email address.
 | error_code | The error code if there is any error. See error table in the below section. |
 | error_message | The error message if there is any error. See error table in the below section. |
 
-## DisposableEmail(email_address)
+## is_disposable_email(email_address)
 
 Check if the supplied email address is from a disposable email provider.
 
@@ -77,7 +77,7 @@ Check if the supplied email address is from a disposable email provider.
 | error_code | The error code if there is any error. See error table in the below section. |
 | error_message | The error message if there is any error. See error table in the below section. |
 
-## FreeEmail(email_address)
+## is_free_email(email_address)
 
 Check if the supplied email address is from a free email provider.
 
@@ -100,8 +100,8 @@ Sample Codes
 ```python
 import MailboxValidator
 	
-	mbv = MailboxValidator.SingleValidation('PASTE_API_KEY_HERE')
-	results = mbv.ValidateEmail('example@example.com')
+	mbv = MailboxValidator.EmailValidation('PASTE_API_KEY_HERE')
+	results = mbv.validate_email('example@example.com')
 	
 	if results is None:
 		print("Error connecting to API.\n")
@@ -135,8 +135,8 @@ import MailboxValidator
 ```python
 import MailboxValidator
 	
-	mbv = MailboxValidator.SingleValidation('PASTE_API_KEY_HERE')
-	results = mbv.DisposableEmail('example@example.com')
+	mbv = MailboxValidator.EmailValidation('PASTE_API_KEY_HERE')
+	results = mbv.is_disposable_email('example@example.com')
 	
 	if results is None:
 		print("Error connecting to API.\n")
@@ -154,8 +154,8 @@ import MailboxValidator
 ```python
 import MailboxValidator
 	
-	mbv = MailboxValidator.SingleValidation('PASTE_API_KEY_HERE')
-	results = mbv.FreeEmail('example@example.com')
+	mbv = MailboxValidator.EmailValidation('PASTE_API_KEY_HERE')
+	results = mbv.is_free_email('example@example.com')
 	
 	if results is None:
 		print("Error connecting to API.\n")
@@ -183,4 +183,4 @@ Errors
 Copyright
 =========
 
-Copyright (C) 2018-2020 by MailboxValidator.com, support@mailboxvalidator.com
+Copyright (C) 2018-2021 by MailboxValidator.com, support@mailboxvalidator.com
