@@ -1,1 +1,1 @@
-from MailboxValidator.SingleValidation import SingleValidation
+from MailboxValidator.email_validation import EmailValidation
