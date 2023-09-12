@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
 	name="MailboxValidator",
-	version="1.2.0",
+	version="1.3.0",
 	author="MailboxValidator.com",
 	author_email="support@mailboxvalidator.com",
 	description="Email verification module for Python using MailboxValidator API. It validates if the email is valid, from a free provider, contains high-risk keywords, whether it\'s a catch-all address and so much more.",
