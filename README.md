@@ -12,7 +12,7 @@ This module can be useful in many types of projects, for example
 
 # Developer Documentation
 To learn more about installation, usage, and code examples, please visit the developer documentation at [https://mailboxvalidator-python.readthedocs.io/en/latest/index.html.](https://mailboxvalidator-python.readthedocs.io/en/latest/index.html)
-Copyright
-=========
 
-Copyright (C) 2018-2024 by MailboxValidator.com, support@mailboxvalidator.com
+
+# Copyright
+Copyright (C) 2018-2025 by MailboxValidator.com, support@mailboxvalidator.com
