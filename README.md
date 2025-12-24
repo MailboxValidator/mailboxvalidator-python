@@ -15,4 +15,4 @@ To learn more about installation, usage, and code examples, please visit the dev
 
 
 # Copyright
-Copyright (C) 2018-2025 by MailboxValidator.com, support@mailboxvalidator.com
+Copyright (C) 2018-2026 by MailboxValidator.com, support@mailboxvalidator.com
